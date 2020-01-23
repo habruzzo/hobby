@@ -1,2 +1,2 @@
 # hobby
-spare time
+projects in my spare time

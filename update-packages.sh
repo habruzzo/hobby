@@ -3,7 +3,11 @@
 
 cd /home/holden/Downloads
 for package in $( ls | grep "\..z$" ); do
-	curl -O -L "https://aur.archlinux.org/cgit/aur.git/snapshot/${package}"
+	CURL="curl -O -L https://aur.archlinux.org/cgit/aur.git/snapshot/${package}"
+	$CURL
+	TAR="tar -xvzf ${package}"
+	echo $TAR
+	$TAR
 	cd `echo "${package}" | rev | cut -c8- | rev`
 	if [[ $? -eq 0 ]]; then
 		pwd

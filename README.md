@@ -20,3 +20,7 @@ project that takes in an image file as input and outputs an altered version of t
 <b>proxy-vote (python):</b>
 project that searches for proxies, connects to the first available, and votes for the Youtube creater Contrapoints, because I wanted her to win an online poll that was happening in ~December 2019
 </br>associated file: proxy-vote.py
+
+<b>update-packages (bash):</b>
+i run this script once in a while to update packages i have that aren't automatically updated through pacman
+</br>associated file: updated-packages.sh
